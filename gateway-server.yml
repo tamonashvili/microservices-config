@@ -92,3 +92,5 @@ management:
     enabled: false
   server:
     port: 9000
+    
+testK:1234
