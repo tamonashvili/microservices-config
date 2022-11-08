@@ -1,2 +1,6 @@
 server:
   port: 9092
+  
+
+
+testKey: 1234
