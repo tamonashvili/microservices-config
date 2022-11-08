@@ -1,13 +1,13 @@
-dbenv.env = test
-dbenv.env.url=jdbc:postgresql://192.168.100.6:5432/administrative_db
-dbenv.env.username = tornike
-dbenv.env.password = tornike
-dbenv.env.driverClassName = org.postgresql.Driver
-
-
----
-dbenv.env = prod
-dbenv.env.url=jdbc:postgresql://192.168.100.6:5432/administrative_db2 
-dbenv.env.username = tornike
-dbenv.env.password = tornike
-dbenv.env.driverClassName = org.postgresql.Driver
+dbenv:
+  envs:
+    test:
+      url: jdbc:postgresql://192.168.100.6:5432/administrative_db
+      username: tornike
+      driverClassName: org.postgresql.Driver
+      password: tornike
+    prod:
+      url: jdbc:postgresql://192.168.100.6:5432/administrative_db2
+      username: tornike
+      driverClassName: org.postgresql.Driver
+      password: tornike
+  
