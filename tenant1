@@ -1,0 +1,5 @@
+name=tenant_1
+datasource.url=jdbc:postgresql://192.168.100.6:5432/administrative_db
+datasource.username=tornike
+datasource.password=tornike
+datasource.driver-class-name=org.postgresql.Driver
