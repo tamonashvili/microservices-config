@@ -92,7 +92,10 @@ management:
     enabled: false
   server:
     port: 9000
-    
+
+
+defaultTenant: ess
+
 tenants:
   datasources:
     ess:
