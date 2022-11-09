@@ -1,0 +1,72 @@
+server:
+  port: 1212   #default port where the service will be started
+
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.100.5:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        types:
+          print:
+            banner: false
+    generate-ddl: true
+
+  application:
+    name: hr-administrative-service
+
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+
+
+
+
+defaultTenant: ess
+
+tenants:
+  datasources:
+    ess:
+      url: jdbc:postgresql://192.168.100.6:5432/administrative_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
+    retailgroup:
+      url: jdbc:postgresql://192.168.100.6:5432/retailgroup_administrative_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
