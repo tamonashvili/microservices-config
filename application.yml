@@ -3,12 +3,12 @@ defaultTenant: ess
 tenants:
   datasources:
     ess:
-      url: jdbc:postgresql://192.168.100.6:5432/administrative_db
+      url: jdbc:postgresql://188.169.57.232:5432/administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
     retailgroup:
-      url: jdbc:postgresql://192.168.100.6:5432/retailgroup_administrative_db
+      url: jdbc:postgresql://188.169.57.232:5432/retailgroup_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
