@@ -1,4 +1,5 @@
 defaultTenant: ess
+dfdefaultTenant: ess
 
 tenants:
   datasources:
@@ -9,6 +10,14 @@ tenants:
       password: tornike
     retailgroup:
       url: jdbc:postgresql://localhost:5432/retailgroup_administrative_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
+      
+dftenants:
+  datasources:
+    ess:
+      url: jdbc:postgresql://localhost:5432/docflow_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
