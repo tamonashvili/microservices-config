@@ -8,7 +8,7 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
-    retailgroup:
+    biblus:
       url: jdbc:postgresql://localhost:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: onday_pg
