@@ -8,8 +8,8 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
-    retailgroup:
-      url: jdbc:postgresql://192.168.100.6:5432/retailgroup_administrative_db
+    biblus:
+      url: jdbc:postgresql://192.168.100.6:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
