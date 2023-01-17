@@ -11,8 +11,8 @@ tenants:
     biblus:
       url: jdbc:postgresql://localhost:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
+      username: onday_pg
+      password: OnDay#2022
       
 dftenants:
   datasources:
