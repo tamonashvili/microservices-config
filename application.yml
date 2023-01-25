@@ -1,5 +1,5 @@
-defaultTenant: ess
-dfdefaultTenant: ess
+defaultTenant: biblus
+dfdefaultTenant: biblus
 
 tenants:
   datasources:
