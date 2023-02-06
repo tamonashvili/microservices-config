@@ -21,3 +21,8 @@ dftenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
+    biblus:
+      url: jdbc:postgresql://localhost:5432/biblus_docflow_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: OnDay#2022
