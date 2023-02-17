@@ -31,6 +31,9 @@ spring:
           print:
             banner: false
     generate-ddl: true
+  data:
+    mongodb:
+      uri: mongodb://tornike:tornikeMongo@192.168.100.5:27019/?authMechanism=DEFAULT&authSource=administrative_db
     
   servlet:
     multipart:
