@@ -32,6 +32,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=docflow_db
+      database: docflow_db
   application:
     name: docflow-service
 
