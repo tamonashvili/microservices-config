@@ -33,7 +33,7 @@ spring:
     generate-ddl: true
   data:
     mongodb:
-      uri: mongodb://tornike:tornikeMongo@192.168.100.5:27019/?authSource=administrative_db
+      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
       database: administrative_db      
     
   servlet:
