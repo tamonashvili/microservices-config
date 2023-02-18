@@ -34,7 +34,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
-      database: administrative_db      
     
   servlet:
     multipart:
