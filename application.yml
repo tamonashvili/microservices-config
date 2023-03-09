@@ -3,8 +3,8 @@ dfdefaultTenant: biblus
 
 tenants:
   datasources:
-    ess:
-      url: jdbc:postgresql://192.168.100.5:5432/administrative_db
+    ec:
+      url: jdbc:postgresql://192.168.100.5:5432/ec_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
