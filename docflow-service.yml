@@ -22,12 +22,14 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        #dialect: org.hibernate.dialect.PostgreSQLDialect
-        dialect: ge.hrsolutions.docflow.util.ProjectPostgreSQL95Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         #format_sql: true
         jdbc:
           lob:
             non_contextual_creation: true
+        types:
+          print:
+            banner: false
     generate-ddl: true
   servlet:
     multipart:
