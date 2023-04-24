@@ -14,10 +14,10 @@ tenants:
       username: onday_pg
       password: OnDay#2022
     elmontage:
-      url: jdbc:postgresql://db-postgresql-nyc1-96233-do-user-8524462-0.b.db.ondigitalocean.com:25060/defaultdb?sslmode=require
+      url: jdbc:postgresql://localhost:5432/elmontage_administrative_db
       driverClassName: org.postgresql.Driver
-      username: doadmin
-      password: AVNS_Vnr4BR7bEBqi1gcqCsu
+      username: onday_pg
+      password: OnDay#2022
       
 dftenants:
   datasources:
