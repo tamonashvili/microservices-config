@@ -13,6 +13,11 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
+    elmontage:
+      url: jdbc:postgresql://192.168.100.5:5432/elmontage_administrative_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
       
       
 dftenants:
