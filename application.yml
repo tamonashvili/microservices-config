@@ -4,17 +4,17 @@ dfdefaultTenant: biblus
 tenants:
   datasources:
     ec:
-      url: jdbc:postgresql://192.168.100.5:5432/ec_administrative_db
+      url: jdbc:postgresql://localhost:5432/ec_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
     elmontage:
-      url: jdbc:postgresql://192.168.100.5:5432/elmontage_administrative_db
+      url: jdbc:postgresql://localhost:5432/elmontage_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
     biblus:
-      url: jdbc:postgresql://192.168.100.5:5432/biblus_administrative_db
+      url: jdbc:postgresql://localhost:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
@@ -23,7 +23,7 @@ tenants:
 dftenants:
   datasources:
     biblus:
-      url: jdbc:postgresql://192.168.100.5:5432/biblus_docflow_db
+      url: jdbc:postgresql://localhost:5432/biblus_docflow_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
