@@ -3,16 +3,6 @@ dfdefaultTenant: biblus
 
 tenants:
   datasources:
-    ec:
-      url: jdbc:postgresql://localhost:5432/ec_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
-    elmontage:
-      url: jdbc:postgresql://localhost:5432/elmontage_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
     biblus:
       url: jdbc:postgresql://localhost:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
