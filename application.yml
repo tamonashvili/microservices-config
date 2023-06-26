@@ -3,12 +3,12 @@ defaultTenant: biblus
 tenants:
   datasources:
     ess:
-      url: jdbc:postgresql://188.169.57.232:5432/administrative_db
+      url: jdbc:postgresql://89.232.33.66:5432/administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
     biblus:
-      url: jdbc:postgresql://188.169.57.232:5432/elmontage_administrative_db
+      url: jdbc:postgresql://89.232.33.66:5432/elmontage_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
