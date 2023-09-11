@@ -70,12 +70,12 @@ zuul:
 
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
-    socket-timeout-millis: 300000
-    connect-timeout-millis: 300000
+    socket-timeout-millis: 900000
+    connect-timeout-millis: 900000
   sensitive-headers: Cookie,Set-Cookie
 ribbon:
-  ConnectTimeout: 90000
-  ReadTimeout: 90000
+  ConnectTimeout: 150000
+  ReadTimeout: 150000
 
 
 logging:
