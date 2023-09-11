@@ -21,11 +21,6 @@ tenants:
       
 dftenants:
   datasources:
-    ess:
-      url: jdbc:postgresql://localhost:5432/docflow_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
     biblus:
       url: jdbc:postgresql://localhost:5432/biblus_docflow_db1
       driverClassName: org.postgresql.Driver
