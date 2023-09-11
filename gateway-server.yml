@@ -1,6 +1,6 @@
 server:
   port: 8782   #default port where the service will be started
-
+  connection-timeout: 90000
 
 spring:
   jpa:
