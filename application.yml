@@ -1,5 +1,5 @@
 defaultTenant: biblus_test
-dfdefaultTenant: biblus
+dfdefaultTenant: biblus_test
 
 tenants:
   datasources:
