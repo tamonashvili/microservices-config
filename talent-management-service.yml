@@ -1,0 +1,53 @@
+server:
+  port: 1214   #default port where the service will be started
+
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: ge.onday.talent.util.ProjectPostgreSQL95Dialect
+        #format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    generate-ddl: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
+      database: administrative_db
+      
+  application:
+    name: talent-management-service
+    
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
