@@ -12,3 +12,10 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
+tmtenants:
+  datasources:
+    biblus_talent:
+      url: jdbc:postgresql://94.43.157.75:5432/talent_management_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
