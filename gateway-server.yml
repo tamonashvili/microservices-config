@@ -67,7 +67,11 @@ zuul:
       path: /file/**
       sensitiveHeaders:
       serviceId: FILE-SERVICE
-
+    talent_management_service:
+      path: /talent-management/**
+      sensitiveHeaders:
+      serviceId: talent_management_service    
+      
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
     socket-timeout-millis: 300000
