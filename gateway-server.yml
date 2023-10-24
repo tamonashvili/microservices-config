@@ -71,7 +71,7 @@ zuul:
       path: /gateway/**
       sensitiveHeaders:
       serviceId: gateway-server
-   talent_management_service:
+    talent_management_service:
       path: /talent-management/**
       sensitiveHeaders:
       serviceId: talent_management_service    
