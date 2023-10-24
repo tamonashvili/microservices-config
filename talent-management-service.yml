@@ -23,7 +23,7 @@ spring:
     properties:
       hibernate:
         #dialect: org.hibernate.dialect.PostgreSQLDialect
-        dialect: ge.hrsolutions.docflow.util.ProjectPostgreSQL95Dialect
+        dialect: ge.onday.talent.util.ProjectPostgreSQL95Dialect
         #format_sql: true
         jdbc:
           lob:
