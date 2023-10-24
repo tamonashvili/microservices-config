@@ -67,6 +67,10 @@ zuul:
       path: /file/**
       sensitiveHeaders:
       serviceId: FILE-SERVICE
+    gateway-server:
+      path: /gateway/**
+      sensitiveHeaders:
+      serviceId: gateway-server
 
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
