@@ -15,6 +15,11 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+         issuer-uri: http://127.0.0.1:8081
 
 
   application:
