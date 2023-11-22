@@ -1,5 +1,5 @@
 defaultTenant: biblus
-dfdefaultTenant: elmontage
+dfdefaultTenant: biblus
 
 tenants:
   datasources:
