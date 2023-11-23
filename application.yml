@@ -14,7 +14,7 @@ tenants:
       username: onday_pg
       password: OnDay#2022
     biblusi:
-      url: jdbc:postgresql://10.114.0.2:25060/biblus_administrative_db
+      url: jdbc:postgresql://10.114.0.0/20:25060/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: AVNS_3ehU5CzxHJKa9bPo_lc
