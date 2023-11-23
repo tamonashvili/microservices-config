@@ -1,5 +1,5 @@
-defaultTenant: biblus
-dfdefaultTenant: biblus
+defaultTenant: biblusi
+dfdefaultTenant: biblusi
 
 tenants:
   datasources:
@@ -13,6 +13,11 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: OnDay#2022
+    biblusi:
+      url: jdbc:postgresql://localhost:5432/biblus_administrative_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: OnDay#2022
     elmontage:
       url: jdbc:postgresql://localhost:5432/administrative_db?currentSchema=elmontage
       driverClassName: org.postgresql.Driver
@@ -22,6 +27,11 @@ tenants:
 dftenants:
   datasources:
     biblus:
+      url: jdbc:postgresql://localhost:5432/biblus_docflow_db1
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: OnDay#2022
+    biblusi:
       url: jdbc:postgresql://localhost:5432/biblus_docflow_db1
       driverClassName: org.postgresql.Driver
       username: onday_pg
