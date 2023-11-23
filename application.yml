@@ -5,10 +5,10 @@ defaulttmtenants: biblus_talent
 tenants:
   datasources:
     biblus_test:
-      url: jdbc:postgresql://192.168.100.5:5432/biblus_administrative_db
+      url: jdbc:postgresql://db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25060/biblus_administrative_db
       driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
+      username: onday_pg
+      password: AVNS_3ehU5CzxHJKa9bPo_lc
     elmontage:
       url: jdbc:postgresql://192.168.100.5:5432/elmontage_administrative_db
       driverClassName: org.postgresql.Driver
