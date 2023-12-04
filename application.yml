@@ -1,5 +1,5 @@
-defaultTenant: elmontage
-dfdefaultTenant: elmontage
+defaultTenant: dev
+dfdefaultTenant: dev
 
 tenants:
   datasources:
