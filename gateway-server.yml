@@ -60,10 +60,10 @@ zuul:
       path: /administrative/**
       serviceId: hr-administrative-service
       sensitiveHeaders:
-    hr-account-service:
-      path: /account/**
+    CONFIG-SERVER:
+      path: /config/**
       sensitiveHeaders:
-      serviceId: HR-ACCOUNT-SERVICE
+      serviceId: CONFIG-SERVER
     docflow-service:
       path: /docflow/**
       sensitiveHeaders:
