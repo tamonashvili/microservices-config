@@ -61,7 +61,7 @@ zuul:
       serviceId: hr-administrative-service
       sensitiveHeaders:
     CONFIG-SERVER:
-      path: /config/**
+      path: /share-config/**
       sensitiveHeaders:
       serviceId: CONFIG-SERVER
     docflow-service:
