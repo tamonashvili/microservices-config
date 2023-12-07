@@ -46,5 +46,10 @@ logging:
             sql:
               BasicBinder: TRACE
 
-
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
 
