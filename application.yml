@@ -18,12 +18,12 @@ tenants:
 dftenants:
   datasources:
     biblus_test:
-      url: jdbc:postgresql://192.168.100.5:5432/biblus_docflow_db
+      url: jdbc:postgresql://94.43.157.75:5432/biblus_docflow_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
     dev:
-      url: jdbc:postgresql://192.168.100.5:5432/dev_docflow_db
+      url: jdbc:postgresql://94.43.157.75:5432/dev_docflow_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
