@@ -1,6 +1,6 @@
 server:
   port: 8782   #default port where the service will be started
-
+  max-http-header-size: 10000000
 
 spring:
   jpa:
@@ -15,6 +15,11 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+         issuer-uri: http://127.0.0.1:8081
 
 
   application:
@@ -55,10 +60,10 @@ zuul:
       path: /administrative/**
       serviceId: hr-administrative-service
       sensitiveHeaders:
-    hr-account-service:
-      path: /account/**
+    share-config-service:
+      path: /share-config/**
       sensitiveHeaders:
-      serviceId: HR-ACCOUNT-SERVICE
+      serviceId: share-config-service
     docflow-service:
       path: /docflow/**
       sensitiveHeaders:
@@ -67,11 +72,15 @@ zuul:
       path: /file/**
       sensitiveHeaders:
       serviceId: FILE-SERVICE
+    gateway-server:
+      path: /gateway/**
+      sensitiveHeaders:
+      serviceId: gateway-server
     talent_management_service:
       path: /talent-management/**
       sensitiveHeaders:
       serviceId: talent_management_service    
-      
+
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
     socket-timeout-millis: 300000
