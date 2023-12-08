@@ -9,7 +9,7 @@ eureka:         #tells about the Eureka server details and its refresh time
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://192.168.100.5:8781/eureka/
+      defaultZone: http://localhost:8781/eureka/
     healthcheck:
       enabled: false
     lease:
@@ -29,13 +29,18 @@ spring:
           lob:
             non_contextual_creation: true
     generate-ddl: true
-
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
+      database: administrative_db
+      
   application:
     name: docflow-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/docflow_db
-    username: postgres
-    password: Amona1989
+    
 
 logging:
   level:
@@ -48,4 +53,9 @@ logging:
               BasicBinder: TRACE
 
 
-
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
