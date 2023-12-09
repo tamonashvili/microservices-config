@@ -63,10 +63,10 @@ logging:
   level:
     org:
       hibernate:
-        SQL: DEBUG
+        SQL: off
         type:
           descriptor:
             sql:
-              BasicBinder: TRACE
+              BasicBinder: off
 
 
