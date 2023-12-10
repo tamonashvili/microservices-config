@@ -53,7 +53,9 @@ spring:
     baseline-description: "init"
     baseline-version: 0
     out-of-order:logging: true
-    ignore-missing-migrations: true
+    ignore-migration-patterns:
+      - "*:missing"
+    
 
 logging:
   level:
