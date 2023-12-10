@@ -82,11 +82,11 @@ logging:
   level:
     org:
       hibernate:
-        SQL: DEBUG
+        SQL: off
         type:
           descriptor:
             sql:
-              BasicBinder: TRACE
+              BasicBinder: off
 management:
   security:
     enabled: false
