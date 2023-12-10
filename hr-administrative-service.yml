@@ -19,7 +19,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -30,7 +30,7 @@ spring:
         types:
           print:
             banner: false
-    generate-ddl: true
+    generate-ddl: false
   data:
     mongodb:
       uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
