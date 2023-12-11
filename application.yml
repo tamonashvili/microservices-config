@@ -1,5 +1,5 @@
-defaultTenant: dev
-dfdefaultTenant: biblusi
+defaultTenant: biblusi
+dfdefaultTenant: elmontage
 
 tenants:
   datasources:
