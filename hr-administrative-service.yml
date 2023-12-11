@@ -58,7 +58,6 @@ spring:
     #password: tornike
     baseline-description: "init"
     baseline-version: 0
-    ignore-missing-migrations: true
     
 logging:
   level:
