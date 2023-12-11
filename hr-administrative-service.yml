@@ -63,11 +63,11 @@ logging:
   level:
     org:
       hibernate:
-        SQL: TRACE
+        SQL: DEBUG
         type:
           descriptor:
             sql:
-              BasicBinder: DEBUG
+              BasicBinder: TRACE
               
 feign:
   client:
