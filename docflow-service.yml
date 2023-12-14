@@ -19,7 +19,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     properties:
       hibernate:
         #dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -28,7 +28,7 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-    generate-ddl: true
+    generate-ddl: false
   servlet:
     multipart:
       max-file-size: 5MB
