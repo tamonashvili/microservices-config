@@ -1,5 +1,4 @@
-defaultTenant: elmontage
-dfdefaultTenant: biblus_test
+defaultTenant: biblus_test
 defaulttmtenants: biblus_talent
 
 tenants:
@@ -21,19 +20,6 @@ tenants:
       password: tornike
       
       
-      
-dftenants:
-  datasources:
-    biblus_test:
-      url: jdbc:postgresql://192.168.100.5:5432/biblus_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
-    dev:
-      url: jdbc:postgresql://192.168.100.5:5432/dev_docflow_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
             
 tmtenants:
   datasources:
