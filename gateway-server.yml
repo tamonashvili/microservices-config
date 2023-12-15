@@ -24,7 +24,13 @@ spring:
 
   application:
     name: gateway-server
-
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    #user: tornike
+    #password: tornike
+    baseline-description: "init"
+    baseline-version: 0
 
   servlet:
     multipart:
