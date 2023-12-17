@@ -22,7 +22,7 @@ dftenants:
       username: onday_pg
       password: AVNS_3ehU5CzxHJKa9bPo_lc
     elmontage:
-      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25061/elmontage_administrative_db?sslmode=require
+      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25061/elmontage_docflow_db?sslmode=require
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: AVNS_3ehU5CzxHJKa9bPo_lc
