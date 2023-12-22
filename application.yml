@@ -9,7 +9,7 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
-    biblus:
+    biblus_test:
       url: jdbc:postgresql://94.43.157.75:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
