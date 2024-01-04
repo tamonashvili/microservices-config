@@ -1,5 +1,5 @@
 defaultTenant: biblus_test
-defaulttmtenants: biblus_test
+defaulttmtenants: biblus_talent
 
 tenants:
   datasources:
