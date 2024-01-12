@@ -17,3 +17,14 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: AVNS_3ehU5CzxHJKa9bPo_lc
+    dreamland:
+      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25061/dev_administrative_db?sslmode=require
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: AVNS_3ehU5CzxHJKa9bPo_lc
+    ecowood:
+      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25061/dev_administrative_db?sslmode=require
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: AVNS_3ehU5CzxHJKa9bPo_lc
+
