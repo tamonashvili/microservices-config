@@ -1,4 +1,4 @@
-defaultTenant: biblusi
+defaultTenant: dev
 
 tenants:
   datasources:
