@@ -1,32 +1,15 @@
 defaultTenant: elmontage
 defaulttmtenants: biblus_talent
-dfdefaultTenant: elmontage
 
 tenants:
   datasources:
-    elmontage:
-      url: jdbc:postgresql://94.43.157.75:5432/elmontage_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
     biblus_test:
       url: jdbc:postgresql://94.43.157.75:5432/biblus_administrative_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
       
-dftenants:
-  datasources:
-    biblus_test:
-      url: jdbc:postgresql://94.43.157.75:5432/biblus_docflow_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
-    dev:
-      url: jdbc:postgresql://94.43.157.75:5432/dev_docflow_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
+
       
 tmtenants:
   datasources:
