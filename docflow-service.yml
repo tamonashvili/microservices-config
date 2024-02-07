@@ -37,10 +37,16 @@ spring:
     mongodb:
       uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
       database: administrative_db
-      
+  
   application:
     name: docflow-service
-    
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://localhost:8765
+        auto-registration: true
+        api-path: /instances
 
 logging:
   level:
@@ -59,13 +65,7 @@ feign:
       default:
         connectTimeout: 160000000
         readTimeout: 160000000
-  boot:
-    admin:
-      client:
-        enabled: true
-        url: http://localhost:8765
-        auto-registration: true
-        api-path: /instances
+
 management:
   endpoints:
     web:
