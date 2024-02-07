@@ -86,6 +86,10 @@ zuul:
       path: /talent-management/**
       sensitiveHeaders:
       serviceId: talent-management-service    
+    admin-service:
+      path: /admin/**
+      sensitiveHeaders:
+      serviceId:  admin-service   
 
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
