@@ -46,19 +46,18 @@ spring:
         git:
           uri:
 
-eureka:         #tells about the Eureka server details and its refresh time
+eureka: #tells about the Eureka server details and its refresh time
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 5
   client:
     serviceUrl:
       defaultZone: http://localhost:8781/eureka/
     healthcheck:
-      enabled: true
+      enabled: false
     lease:
       duration: 5
-    fetch-registry: true
-    register-with-eureka: true
+    registry-fetch-interval-seconds: 30
 
 zuul:
   routes:
