@@ -20,7 +20,13 @@ spring:
       resource-server:
         jwt:
          issuer-uri: http://127.0.0.1:8081
-
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://localhost:8765
+        auto-registration: true
+        api-path: /instances
 
   application:
     name: gateway-server
