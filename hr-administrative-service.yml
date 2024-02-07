@@ -6,7 +6,7 @@ eureka:         #tells about the Eureka server details and its refresh time
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     prefer-ip-address: true
-   #hostname: localhost
+    #hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8781/eureka/
@@ -35,16 +35,15 @@ spring:
     mongodb:
       uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
       database: administrative_db
-    
+  
   servlet:
     multipart:
       enabled: true
       max-file-size: 10MB
       max-request-size: 10MB
-      
+  
   application:
     name: hr-administrative-service
-
 
   cloud:
     compatibility-verifier:
@@ -58,7 +57,14 @@ spring:
     #password: tornike
     baseline-description: "init"
     baseline-version: 0
-      
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://localhost:8765
+        auto-registration: true
+        api-path: /instances
+
 logging:
   level:
     org:
@@ -68,20 +74,16 @@ logging:
           descriptor:
             sql:
               BasicBinder: off
-              
+
 feign:
   client:
     config:
       default:
         connectTimeout: 160000000
         readTimeout: 160000000
-  boot:
-    admin:
-      client:
-        enabled: true
-        url: http://localhost:8765
-        auto-registration: true
-        api-path: /instances
+
+        
+       
 management:
   endpoints:
     web:
