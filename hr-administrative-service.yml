@@ -82,3 +82,8 @@ feign:
         url: http://localhost:8765
         auto-registration: true
         api-path: /instances
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
