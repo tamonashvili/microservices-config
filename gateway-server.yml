@@ -48,6 +48,8 @@ eureka: #tells about the Eureka server details and its refresh time
     lease:
       duration: 5
     registry-fetch-interval-seconds: 30
+    fetch-registry: true
+    register-with-eureka: true
 
 zuul:
   routes:
