@@ -47,6 +47,12 @@ spring:
         url: http://localhost:8765
         auto-registration: true
         api-path: /instances
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  loadbalancer:
+    ribbon:
+      enable: false
 
 logging:
   level:
