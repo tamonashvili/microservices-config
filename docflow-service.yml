@@ -52,7 +52,7 @@ spring:
       enabled: false
   loadbalancer:
     ribbon:
-      enable: false
+      enable: true
 
 logging:
   level:
