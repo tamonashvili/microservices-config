@@ -9,7 +9,7 @@ eureka:         #tells about the Eureka server details and its refresh time
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://localhost:8781/eureka/
+      defaultZone: http://10.114.0.5:8781/eureka/
     healthcheck:
       enabled: false
     lease:
