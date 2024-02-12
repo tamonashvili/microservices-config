@@ -46,7 +46,9 @@ spring:
   http:
     multipart:
       location: /data/upload_tmp
-
+  output:
+    ansi:
+      enabled: always
   cloud:
     gateway:
       discovery:
