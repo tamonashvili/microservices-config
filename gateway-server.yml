@@ -28,7 +28,7 @@ spring:
         auto-registration: true
         api-path: /instances
   main:
-    web-application-type: reactive
+    web-application-type: none
   application:
     name: gateway-server
   flyway:
