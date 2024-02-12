@@ -27,7 +27,8 @@ spring:
         url: http://localhost:8765
         auto-registration: true
         api-path: /instances
-
+  main:
+    web-application-type: reactive
   application:
     name: gateway-server
   flyway:
@@ -46,9 +47,7 @@ spring:
   http:
     multipart:
       location: /data/upload_tmp
-  output:
-    ansi:
-      enabled: always
+
   cloud:
     gateway:
       discovery:
