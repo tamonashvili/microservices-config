@@ -19,7 +19,7 @@ spring:
     oauth2:
       resource-server:
         jwt:
-         issuer-uri: http://127.0.0.1:8081
+          issuer-uri: http://127.0.0.1:8081
   boot:
     admin:
       client:
@@ -46,12 +46,31 @@ spring:
   http:
     multipart:
       location: /data/upload_tmp
-  cloud:
-    config:
-      server:
-        git:
-          uri:
 
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: hr-administrative-service
+          uri: lb://hr-administrative-service
+          predicates:
+            - Path=/administrative/**
+          filters:
+            - RewritePath=/administrative/(?<path>.*), /$\{path}
+        - id: share-config-service
+          uri: lb://share-config-service
+          predicates:
+            - Path=/share-config/**
+          filters:
+            - RewritePath=/share-config/(?<path>.*), /$\{path}
+        - id: DOCFLOW-SERVICE
+          uri: lb://DOCFLOW-SERVICE
+          predicates:
+            - Path=/docflow/**
+          filters:
+            - RewritePath=/docflow/(?<path>.*), /$\{path}
 eureka: #tells about the Eureka server details and its refresh time
   instance:
     lease-renewal-interval-in-seconds: 30
@@ -65,36 +84,6 @@ eureka: #tells about the Eureka server details and its refresh time
       duration: 5
     registry-fetch-interval-seconds: 30
 
-zuul:
-  routes:
-    hr-administrative-service:
-      path: /administrative/**
-      serviceId: hr-administrative-service
-      sensitiveHeaders:
-    share-config-service:
-      path: /share-config/**
-      sensitiveHeaders:
-      serviceId: share-config-service
-    docflow-service:
-      path: /docflow/**
-      sensitiveHeaders:
-      serviceId: DOCFLOW-SERVICE
-    file-service:
-      path: /file/**
-      sensitiveHeaders:
-      serviceId: FILE-SERVICE
-    gateway-server:
-      path: /gateway/**
-      sensitiveHeaders:
-      serviceId: gateway-server
-    talent-management-service:
-      path: /talent-management/**
-      sensitiveHeaders:
-      serviceId: talent-management-service    
-    admin-service:
-      path: /admin/**
-      sensitiveHeaders:
-      serviceId:  admin-service   
 
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
