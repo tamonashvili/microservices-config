@@ -1,6 +1,6 @@
 server:
   port: 8783   #default port where the service will be started
-  max-http-header-size: 10000000
+
 
 spring:
   jpa:
@@ -15,22 +15,9 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-  security:
-    oauth2:
-      resource-server:
-        jwt:
-          issuer-uri: http://127.0.0.1:8081
-  boot:
-    admin:
-      client:
-        enabled: true
-        url: http://localhost:8765
-        auto-registration: true
-        api-path: /instances
-  main:
-    web-application-type: none
+
   application:
-    name: gateway-server
+    name: auth-service
   flyway:
     baseline-on-migrate: true
     enabled: true
@@ -48,30 +35,7 @@ spring:
     multipart:
       location: /data/upload_tmp
 
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: hr-administrative-service
-          uri: lb://hr-administrative-service
-          predicates:
-            - Path=/administrative/**
-          filters:
-            - RewritePath=/administrative/(?<path>.*), /$\{path}
-        - id: share-config-service
-          uri: lb://share-config-service
-          predicates:
-            - Path=/share-config/**
-          filters:
-            - RewritePath=/share-config/(?<path>.*), /$\{path}
-        - id: DOCFLOW-SERVICE
-          uri: lb://DOCFLOW-SERVICE
-          predicates:
-            - Path=/docflow/**
-          filters:
-            - RewritePath=/docflow/(?<path>.*), /$\{path}
+
 eureka: #tells about the Eureka server details and its refresh time
   instance:
     lease-renewal-interval-in-seconds: 30
@@ -105,10 +69,5 @@ logging:
           descriptor:
             sql:
               BasicBinder: TRACE
-management:
-  security:
-    enabled: false
-  server:
-    port: 9000
 
 
