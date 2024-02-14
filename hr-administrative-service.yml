@@ -1,8 +1,6 @@
 server:
   port: 1212   #default port where the service will be started
   max-http-header-size: 10000000
-  servlet:
-    context-path: /administrative
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
     leaseRenewalIntervalInSeconds: 1
