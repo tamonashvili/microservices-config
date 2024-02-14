@@ -1,6 +1,7 @@
 server:
   port: 1213   #default port where the service will be started
-
+  servlet:
+    context-path: /docflow
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
     leaseRenewalIntervalInSeconds: 1
