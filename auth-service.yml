@@ -1,13 +1,13 @@
 server:
-  port: 8782   #default port where the service will be started
-  connection-timeout: 90000
+  port: 8783   #default port where the service will be started
+
 
 spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
-      generate-ddl: true
+      ddl-auto: none
+      generate-ddl: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -16,30 +16,32 @@ spring:
           lob:
             non_contextual_creation: true
 
-
   application:
-    name: gateway-server
-
+    name: auth-service
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    #user: tornike
+    #password: tornike
+    baseline-description: "init"
+    baseline-version: 0
 
   servlet:
     multipart:
       enabled: true
-      max-file-size: 10MB
-      max-request-size: 10MB
+      max-file-size: 100MB
+      max-request-size: 100MB
   http:
     multipart:
       location: /data/upload_tmp
-  cloud:
-    config:
-      server:
-        git:
-          uri:
 
 
-eureka: #tells about the Eureka server details and its refresh time
+eureka:         #tells about the Eureka server details and its refresh time
   instance:
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 5
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8781/eureka/
@@ -47,37 +49,16 @@ eureka: #tells about the Eureka server details and its refresh time
       enabled: false
     lease:
       duration: 5
-    registry-fetch-interval-seconds: 30
-    fetch-registry: true
-    register-with-eureka: true
 
-zuul:
-  routes:
-    hr-administrative-service:
-      path: /administrative/**
-      serviceId: hr-administrative-service
-      sensitiveHeaders:
-    share-config-service:
-      path: /share-config/**
-      sensitiveHeaders:
-      serviceId: share-config-service
-    docflow-service:
-      path: /docflow/**
-      sensitiveHeaders:
-      serviceId: DOCFLOW-SERVICE
-    file-service:
-      path: /file/**
-      sensitiveHeaders:
-      serviceId: FILE-SERVICE
 
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   host:
-    socket-timeout-millis: 900000
-    connect-timeout-millis: 900000
+    socket-timeout-millis: 300000
+    connect-timeout-millis: 300000
   sensitive-headers: Cookie,Set-Cookie
 ribbon:
-  ConnectTimeout: 150000
-  ReadTimeout: 150000
+  ConnectTimeout: 90000
+  ReadTimeout: 90000
 
 
 logging:
@@ -89,10 +70,5 @@ logging:
           descriptor:
             sql:
               BasicBinder: off
-management:
-  security:
-    enabled: false
-  server:
-    port: 9000
 
 
