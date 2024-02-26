@@ -25,7 +25,7 @@ tenants:
       username: onday_pg
       password: AVNS_qwzYEE7Rdaxre-klJHz
     ecowood:
-      url: jdbc:postgresql://private-db-postgresql-fra1-72263-do-user-8524462-0.c.db.ondigitalocean.com:25061/ecowood_db?sslmode=require
+      url: jdbc:postgresql://private-db-postgresql-fra1-72263-do-user-8524462-0.c.db.ondigitalocean.com:25060/ecowood_db?sslmode=require
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: AVNS_qwzYEE7Rdaxre-klJHz
