@@ -28,10 +28,10 @@ tenants:
       url: jdbc:postgresql://10.114.0.10:5432/ecowood_db
       driverClassName: org.postgresql.Driver
       username: onday_pg
-      password: 1234
+      password: Onday#2024
     gastronome:
-      url: jdbc:postgresql://private-db-postgresql-fra1-72263-do-user-8524462-0.c.db.ondigitalocean.com:25060/gastronome_db?sslmode=require
+      url: jdbc:postgresql://10.114.0.10:5432/gastronome_db
       driverClassName: org.postgresql.Driver
       username: onday_pg
-      password: AVNS_qwzYEE7Rdaxre-klJHz
+      password: Onday#2024
 
