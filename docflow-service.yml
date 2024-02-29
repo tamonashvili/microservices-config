@@ -5,7 +5,7 @@ eureka:         #tells about the Eureka server details and its refresh time
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
     prefer-ip-address: true
-    hostname: 192.168.100.22
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8781/eureka/
