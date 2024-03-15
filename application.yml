@@ -1,7 +1,6 @@
 fileServerAddr: 209.38.238.190
 gatewayUrl: http://localhost:8782
 env: dev
-configServerIp: 206.189.63.160
 
 defaultTenant: biblus_test
 
