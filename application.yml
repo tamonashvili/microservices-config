@@ -30,9 +30,5 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: Onday#2024
-    gastronome:
-      url: jdbc:postgresql://10.114.0.10:5432/gastronome_db
-      driverClassName: org.postgresql.Driver
-      username: onday_pg
-      password: Onday#2024
+
 
