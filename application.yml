@@ -1,32 +1,13 @@
 fileServerAddr: 10.114.0.2
-gatewayUrl: http://10.114.0.5:8782
+gatewayUrl: http://10.114.0.2:8782
 env: prod
 defaultTenant: dev
 
 tenants:
   datasources:
     biblusi:
-      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25060/biblus_administrative_db?sslmode=require
-      driverClassName: org.postgresql.Driver
-      username: onday_pg
-      password: AVNS_3ehU5CzxHJKa9bPo_lc
-    elmontage:
-      url: jdbc:postgresql://private-db-postgresql-fra1-42513-do-user-8524462-0.c.db.ondigitalocean.com:25061/elmontage_administrative_db?sslmode=require
-      driverClassName: org.postgresql.Driver
-      username: onday_pg
-      password: AVNS_3ehU5CzxHJKa9bPo_lc
     dev:
-      url: jdbc:postgresql://10.114.0.10:5432/dev_db
-      driverClassName: org.postgresql.Driver
-      username: onday_pg
-      password: Onday#2024
-    dreamland:
-      url: jdbc:postgresql://private-db-postgresql-fra1-72263-do-user-8524462-0.c.db.ondigitalocean.com:25060/dreamland_db?sslmode=require
-      driverClassName: org.postgresql.Driver
-      username: onday_pg
-      password: AVNS_qwzYEE7Rdaxre-klJHz
-    ecowood:
-      url: jdbc:postgresql://10.114.0.10:5432/ecowood_db
+      url: jdbc:postgresql://10.114.0.11:2552/dev_db
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: Onday#2024
