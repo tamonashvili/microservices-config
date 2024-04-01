@@ -31,7 +31,7 @@ spring:
     generate-ddl: true
   data:
     mongodb:
-      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=docflow_db
+      uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=file_attachments
       database: docflow_db
   application:
     name: docflow-service
