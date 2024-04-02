@@ -10,5 +10,23 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: Onday#2024
-
-
+    dreamland:
+      url: jdbc:postgresql://10.114.0.11:2552/dreamland_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: Onday#2024
+    ecowood:
+      url: jdbc:postgresql://10.114.0.11:2552/ecowood_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: Onday#2024
+    elmontage:
+      url: jdbc:postgresql://10.114.0.11:2552/elmontage_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: Onday#2024
+    biblusi:
+      url: jdbc:postgresql://10.114.0.11:2552/biblusi_db
+      driverClassName: org.postgresql.Driver
+      username: onday_pg
+      password: Onday#2024
