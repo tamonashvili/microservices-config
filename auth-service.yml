@@ -31,6 +31,10 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
+  data:
+    mongodb:
+      uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=file_attachments
+      database: docflow_db      
   http:
     multipart:
       location: /data/upload_tmp
