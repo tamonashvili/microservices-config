@@ -52,7 +52,13 @@ spring:
   loadbalancer:
     ribbon:
       enable: false
-
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://localhost:8765
+        auto-registration: true
+        api-path: /instances
 logging:
   level:
     org:
