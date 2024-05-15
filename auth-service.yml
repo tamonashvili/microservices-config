@@ -38,7 +38,7 @@ spring:
     admin:
       client:
         enabled: true
-        url: http://10.114.0.2:8765
+        url: http://eureka-server:8765
         auto-registration: true
         api-path: /instances
 
