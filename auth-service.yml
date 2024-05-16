@@ -34,13 +34,7 @@ spring:
   http:
     multipart:
       location: /data/upload_tmp
-  boot:
-    admin:
-      client:
-        enabled: true
-        url: http://eureka-server:8765
-        auto-registration: true
-        api-path: /instances
+
 
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
