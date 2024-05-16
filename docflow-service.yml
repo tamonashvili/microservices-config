@@ -35,13 +35,7 @@ spring:
       database: docflow_db
   application:
     name: docflow-service
-  boot:
-    admin:
-      client:
-        enabled: true
-        url: http://10.114.0.2:8765
-        auto-registration: true
-        api-path: /instances
+
 logging:
   level:
     org:
