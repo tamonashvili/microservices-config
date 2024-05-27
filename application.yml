@@ -3,22 +3,11 @@ gatewayUrl: http://localhost:8782
 env: dev
 
 defaultTenant: biblus_test
-defaulttmtenants: biblus_talent
 
 tenants:
   datasources:
     biblus_test:
       url: jdbc:postgresql://94.43.157.75:5432/biblus_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
-      
-
-      
-tmtenants:
-  datasources:
-    biblus_talent:
-      url: jdbc:postgresql://94.43.157.75:5432/talent_management_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
