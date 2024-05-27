@@ -1,0 +1,73 @@
+server:
+  port: 8783   #default port where the service will be started
+
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      generate-ddl: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  application:
+    name: auth-service
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+    #user: tornike
+    #password: tornike
+    baseline-description: "init"
+    baseline-version: 0
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+  http:
+    multipart:
+      location: /data/upload_tmp
+
+
+eureka: #tells about the Eureka server details and its refresh time
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+    registry-fetch-interval-seconds: 30
+
+
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  host:
+    socket-timeout-millis: 300000
+    connect-timeout-millis: 300000
+  sensitive-headers: Cookie,Set-Cookie
+ribbon:
+  ConnectTimeout: 90000
+  ReadTimeout: 90000
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+
