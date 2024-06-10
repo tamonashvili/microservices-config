@@ -1,0 +1,78 @@
+server:
+  port: 1213   #default port where the service will be started
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: ge.hrsolutions.docflow.util.ProjectPostgreSQL95Dialect
+        #format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    generate-ddl: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=file_attachments
+      database: docflow_db
+  
+  application:
+    name: docflow-service
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  loadbalancer:
+    ribbon:
+      enable: false
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://localhost:8765
+        auto-registration: true
+        api-path: /instances
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
