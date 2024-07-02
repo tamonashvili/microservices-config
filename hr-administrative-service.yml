@@ -3,8 +3,8 @@ server:
 
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 30
+    leaseExpirationDurationInSeconds: 5
     prefer-ip-address: true
     hostname: localhost
   client:
