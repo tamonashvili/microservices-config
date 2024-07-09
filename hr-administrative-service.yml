@@ -3,8 +3,8 @@ server:
 
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
-    leaseRenewalIntervalInSeconds: 30
-    leaseExpirationDurationInSeconds: 5
+    leaseRenewalIntervalInSeconds: 3
+    leaseExpirationDurationInSeconds: 3
     prefer-ip-address: true
     hostname: localhost
   client:
@@ -14,7 +14,6 @@ eureka:         #tells about the Eureka server details and its refresh time
       enabled: false
     lease:
       duration: 5
-    registry-fetch-interval-seconds: 30
 
 spring:
   jpa:
