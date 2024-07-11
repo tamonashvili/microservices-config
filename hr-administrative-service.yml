@@ -3,7 +3,7 @@ server:
   max-http-header-size: 10000000
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
-    leaseRenewalIntervalInSeconds: 30
+    leaseRenewalIntervalInSeconds: 2
     leaseExpirationDurationInSeconds: 5
     prefer-ip-address: true
     #hostname: localhost
