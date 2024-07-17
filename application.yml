@@ -1,7 +1,7 @@
 fileServerAddr: 10.114.0.2
 gatewayUrl: http://10.114.0.2:8782
 env: prod
-defaultTenant: dev
+defaultTenant: dreamland
 
 tenants:
   datasources:
