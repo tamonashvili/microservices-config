@@ -11,13 +11,8 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
-    test:
-      url: jdbc:postgresql://localhost:5432/biblus_administrative_db
-      driverClassName: org.postgresql.Driver
-      username: tornike
-      password: tornike
     dev:
-      url: jdbc:postgresql://localhost:5432/dev_administrative_db
+      url: jdbc:postgresql://localhost:5432/dev_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
