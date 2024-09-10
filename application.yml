@@ -1,4 +1,4 @@
-fileServerAddr: 10.114.0.2
+fileServerAddr: 10.114.0.13
 gatewayUrl: http://10.114.0.13
 env: prod
 defaultTenant: dev
