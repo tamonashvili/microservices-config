@@ -1,5 +1,5 @@
 fileServerAddr: 10.114.0.13
-gatewayUrl: http://10.114.0.13
+gatewayUrl: https://dservice.onday.ge
 env: prod
 defaultTenant: dev
 
