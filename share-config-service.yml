@@ -1,0 +1,71 @@
+server:
+  port: 1218   #default port where the service will be started
+
+
+eureka: #tells about the Eureka server details and its refresh time
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: ge.onday.shareconfigserver.util.ProjectPostgreSQL95Dialect
+        #format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    generate-ddl: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+  data:
+    mongodb:
+      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
+      database: administrative_db
+
+  application:
+    name: share-config-service
+  datasource:
+    url: jdbc:postgresql://94.43.157.75:5432/app_config_service_db
+    username: tornike
+    password: tornike
+
+
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
