@@ -39,9 +39,9 @@ spring:
       max-request-size: 10MB
   data:
     mongodb:
-      db1:
+      loggerdb:
        uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=error_logger_db
-      db2:
+      attachmentdb:
        uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=file_attachment_db
       
 
