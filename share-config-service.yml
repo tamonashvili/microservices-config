@@ -40,9 +40,11 @@ spring:
   data:
     mongodb:
       db1:
-       uri: mongodb+srv://fs:fs2024mongo@154.6.141.86:27087/file_attachments
+       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=error_logger_db
+       database: error_logger_db     
       db2:
-       uri: mongodb+srv://fs:fs2024mongo@154.6.141.86:27087/error_logger_db
+       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=error_logger_db
+       database: error_logger_db
       
 
   application:
