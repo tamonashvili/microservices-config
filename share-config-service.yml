@@ -40,7 +40,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=file_attachments
-      database: file_attachments
+      
 
   application:
     name: share-config-service
