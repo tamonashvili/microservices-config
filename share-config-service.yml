@@ -40,7 +40,7 @@ spring:
   data:
     mongodb:
       loggerdb:
-       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=error_logger_db
+       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=logger_db
       attachmentdb:
        uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=file_attachment_db
       
