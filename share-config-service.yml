@@ -39,7 +39,10 @@ spring:
       max-request-size: 10MB
   data:
     mongodb:
-      uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=file_attachments
+      db1:
+       uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=file_attachments
+      db2:
+       uri: mongodb://fs:fs2024mongo@154.6.141.86:27087/?authSource=error_logger_db
       
 
   application:
