@@ -34,11 +34,13 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 10MB
+
   data:
     mongodb:
-      uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=file_attachments
-      database: file_attachments
-
+      loggerdb:
+       uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=logger_db
+      attachmentdb:
+       uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=file_attachments
   application:
     name: share-config-service
   datasource:
