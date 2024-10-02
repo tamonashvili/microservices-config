@@ -36,8 +36,11 @@ spring:
       max-request-size: 10MB
   data:
     mongodb:
-      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
-      database: administrative_db
+      loggerdb:
+       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=logger_db
+      attachmentdb:
+       uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=file_attachment_db
+      
 
   application:
     name: share-config-service
