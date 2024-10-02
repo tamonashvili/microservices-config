@@ -38,7 +38,7 @@ spring:
   data:
     mongodb:
       loggerdb:
-       uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=logger_db
+       uri: mongodb://onday_logger:9kB19jLf@10.114.0.11:27087/?authSource=logger_db
       attachmentdb:
        uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=file_attachments
   application:
