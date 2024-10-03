@@ -72,7 +72,7 @@ management:
 resilience4j:
   circuitbreaker:
     instances:
-      userService:
+      HR-ADMINISTRATIVE-SERVICE:
         registerHealthIndicator: true
         eventConsumerBufferSize: 10
         failureRateThreshold: 50
