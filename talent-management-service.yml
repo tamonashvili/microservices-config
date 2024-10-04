@@ -33,10 +33,7 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 10MB
-  data:
-    mongodb:
-      uri: mongodb://on_day:OnDay2022@143.198.229.212:27089/?authSource=administrative_db
-      database: administrative_db
+
       
   application:
     name: talent-management-service
