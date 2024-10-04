@@ -29,10 +29,7 @@ spring:
           lob:
             non_contextual_creation: true
     generate-ddl: true
-  data:
-    mongodb:
-      uri: mongodb://fs:fs2024mongo@10.114.0.11:27087/?authSource=file_attachments
-      database: docflow_db
+
   application:
     name: docflow-service
 
