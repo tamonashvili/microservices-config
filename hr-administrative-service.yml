@@ -96,3 +96,11 @@ jodconverter:
         store:
           TEXT:
             FilterOptions: EmbedImages
+            
+            
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 
+          - prometheus
