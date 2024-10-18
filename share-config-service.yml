@@ -48,7 +48,7 @@ spring:
   application:
     name: share-config-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/app_config_service_db
+    url: jdbc:postgresql://192.168.100.15:5432/app_config_service_db
     username: tornike
     password: tornike
 
