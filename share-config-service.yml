@@ -94,7 +94,7 @@ management:
       exposure:
         include: "*"
 clamd:
-  host: 127.0.0.1
+  host: 154.6.141.122
   port: 3310
   timeout: 25000
   
