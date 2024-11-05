@@ -1,6 +1,10 @@
 server:
   port: 8782   #default port where the service will be started
   max-http-header-size: 10000000
+  error:
+    whitelabel:
+      enabled: off
+    path: /error
 
 spring:
   jpa:
