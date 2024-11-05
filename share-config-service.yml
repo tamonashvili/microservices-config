@@ -72,3 +72,7 @@ feign:
       default:
         connectTimeout: 160000000
         readTimeout: 160000000
+clamd:
+  host: 154.6.141.122
+  port: 3310
+  timeout: 25000
