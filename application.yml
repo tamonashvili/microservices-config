@@ -11,3 +11,8 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
+    dev:
+      url: jdbc:postgresql://94.43.157.75:5432/dev_db
+      driverClassName: org.postgresql.Driver
+      username: tornike
+      password: tornike
