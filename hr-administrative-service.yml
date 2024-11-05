@@ -1,5 +1,9 @@
 server:
   port: 1212   #default port where the service will be started
+  error:
+    whitelabel:
+      enabled: off
+    path: /error
 
 eureka:         #tells about the Eureka server details and its refresh time
   instance:
