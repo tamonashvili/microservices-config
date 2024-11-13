@@ -22,7 +22,7 @@ eureka: #tells about the Eureka server details and its refresh time
 
 spring:
   jpa:
-    show-sql: false
+    show-sql: true
     hibernate:
       ddl-auto: update
     properties:
@@ -34,7 +34,7 @@ spring:
           lob:
             non_contextual_creation: true
         generate_statistics: false
-        show_sql: false
+        show_sql: true
     generate-ddl: true
   servlet:
     multipart:
