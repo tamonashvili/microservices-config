@@ -2,12 +2,12 @@ fileServerAddr: 209.38.238.190
 gatewayUrl: http://localhost:8782
 env: dev
 
-defaultTenant: dev
+defaultTenant: biblusi
 
 tenants:
   datasources:
-    biblus_test:
-      url: jdbc:postgresql://192.168.100.15:5432/biblus_administrative_db
+    biblusi:
+      url: jdbc:postgresql://192.168.100.15:5432/biblusi_db
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
