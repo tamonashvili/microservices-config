@@ -81,3 +81,6 @@ clamd:
   port: 3310
   timeout: 25000
 
+security-properties:
+  security:
+    encryptionSecretKey: yd9gKmA1tNn0
