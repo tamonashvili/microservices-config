@@ -27,6 +27,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        multiTenancy: DATABASE
         #format_sql: true
         jdbc:
           lob:
