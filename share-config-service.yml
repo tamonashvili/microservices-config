@@ -21,6 +21,11 @@ eureka: #tells about the Eureka server details and its refresh time
     registry-fetch-interval-seconds: 30
 
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http:/localhost:8181
   jpa:
     show-sql: false
     hibernate:
@@ -102,3 +107,4 @@ security-properties:
   security:
     encryptionSecretKey: Sh942MmGA8Ek
   
+
