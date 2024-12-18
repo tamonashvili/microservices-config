@@ -49,7 +49,7 @@ spring:
   application:
     name: share-config-service
   datasource:
-    url: jdbc:postgresql://94.43.157.75:5432/app_config_service_db
+    url: jdbc:postgresql://154.6.141.122:2552/app_config_service_db
     username: tornike
     password: tornike
 
