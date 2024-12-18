@@ -50,8 +50,8 @@ spring:
     name: share-config-service
   datasource:
     url: jdbc:postgresql://154.6.141.122:2552/app_config_service_db
-    username: tornike
-    password: tornike
+    username: onday_pg
+    password: Onday#2024Demo
 
 
 
