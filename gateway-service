@@ -1,0 +1,111 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4650"
+              - "http://192.168.100.15:4650"
+              - "http://127.0.0.1:4650"
+              - "http://94.43.157.75:4650"
+              - "https://biblusi.onday.ge"
+              - "https://dev.onday.ge"
+              - "https://elmontage.onday.ge"
+              - "https://dreamland.onday.ge"
+              - "https://ecowood.onday.ge"
+              - "https://test.onday.ge"
+              - "https://gravita.onday.ge"
+              - "https://demo.onday.ge"
+              - "https://ig.onday.ge"
+              - "https://bdo.onday.ge"
+              - "https://liongroup.onday.ge"
+              - "https://logistica.onday.ge"
+              - "https://schoolprogress.onday.ge"
+              - "https://wds.onday.ge"
+              - "https://caucaspack.onday.ge"
+
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+            allow-credentials: true
+
+      routes:
+        - id: CONFIG-SERVICE
+          uri: lb://CONFIG-SERVICE/
+          predicates:
+            - Path=/config-service/**
+        - id: DOCFLOW-SERVICE
+          uri: lb://DOCFLOW-SERVICE/
+          predicates:
+            - Path=/docflow-service/**
+        - id: hr-administrative-service
+          uri: lb://hr-administrative-service
+          predicates:
+            - Path=/hr-administrative-service/**
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth-service/**
+          filters:
+            - RewritePath=/auth-service/(?<suburl>.*),/api/${suburl}
+        - id: share-config-service-id
+          uri: lb://share-config-service
+          predicates:
+            - Path=/share-config-service/**
+        - id: talent-management-service-id
+          uri: lb://talent-management-service
+          predicates:
+            - Path=/talent-management-service/**
+
+    discovery:
+      enabled: true
+  application:
+    name: gateway-service
+
+
+
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: employee
+        url: /v3/api-docs/employee
+      - name: department
+        url: /v3/api-docs/department
+      - name: organization
+        url: /v3/api-docs/organization
+server:
+  port: 8782
+  error:
+    whitelabel:
+      enabled: off
+    path: /error
+management:
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: "*"
+eureka: #tells about the Eureka server details and its refresh time
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 5
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8781/eureka/
+      #defaultZone: http://localhost:8781/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+    registry-fetch-interval-seconds: 30
+
+
