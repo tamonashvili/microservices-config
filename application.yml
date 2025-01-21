@@ -11,8 +11,7 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: tornike
       password: tornike
-
-ggo: aaaa
+      
 tenant:
   mappings:
     biblusi: "biblusi"
