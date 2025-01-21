@@ -10,3 +10,8 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: Onday#2024Demo
+
+tenant:
+  mappings:
+    demo: "dev"
+    test: "dev"
