@@ -12,32 +12,22 @@ tenants:
       username: tornike
       password: tornike
     
-    
 tenant:
   mappings:
-    # Primary and secondary database isolation (one-to-one mapping)
-    isolated:
-      biblusi: biblusi
-      elmontage: elmontage
-      dreamland: dreamland
-      ecowood: ecowood
-
-    # Shared primary and secondary databases (one-to-many mapping)
-    shared:
-      biblus_test:
-        - biblus_test
-        - ta
-      dev:
-        - demo
-        - test
-        - dev
-        - gravita
-        - ig
-        - bdo
-        - liongroup
-        - logistica
-        - schoolprogress
-        - wds
-        - caucaspack
-
-      
+    biblusi: "biblusi"
+    elmontage: "elmontage"
+    dreamland: "dreamland"
+    ecowood: "ecowood"
+    biblus_test: "biblus_test"
+    ta: "biblus_test"
+    demo: "dev"
+    test: "dev"
+    dev: "dev"
+    gravita: "dev"
+    ig: "dev"
+    bdo: "dev"
+    liongroup: "dev"
+    logistica: "dev"
+    schoolprogress: "dev"
+    wds: "dev"
+    caucaspack: "dev"
