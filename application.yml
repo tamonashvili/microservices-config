@@ -11,3 +11,24 @@ tenants:
       driverClassName: org.postgresql.Driver
       username: onday_pg
       password: Onday#2024Demo
+
+
+tenant:
+  mappings:
+    biblusi: "biblusi"
+    elmontage: "elmontage"
+    dreamland: "dreamland"
+    ecowood: "ecowood"
+    biblus_test: "biblus_test"
+    ta: "biblus_test"
+    demo: "dev"
+    test: "dev"
+    dev: "dev"
+    gravita: "dev"
+    ig: "dev"
+    bdo: "dev"
+    liongroup: "dev"
+    logistica: "dev"
+    schoolprogress: "dev"
+    wds: "dev"
+    caucaspack: "dev"
