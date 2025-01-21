@@ -1,6 +1,3 @@
-server:
-  port: 8781 
-
 spring:
   output:
     ansi:
