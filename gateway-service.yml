@@ -3,7 +3,8 @@ spring:
     ansi:
       enabled: always
   main:
-    allow-bean-definition-overriding: true
+      allow-bean-definition-overriding: true
+      
   cloud:
     gateway:
       discovery:
