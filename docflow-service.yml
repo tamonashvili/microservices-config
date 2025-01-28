@@ -23,13 +23,13 @@ spring:
     show-sql: false
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        org:
-          envers:
-            store_data_at_delete: true
-            autoRegisterListeners: true
-            revision_on_collection_change: false
+    properties:    
+      org:
+        hibernate:
+            envers:
+              store_data_at_delete: true
+              autoRegisterListeners: true
+              revision_on_collection_change: false
             
             
         dialect: org.hibernate.dialect.PostgreSQLDialect
