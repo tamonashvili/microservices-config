@@ -24,14 +24,12 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      hibernate:
-        envers:          
-          autoRegisterListeners: true
-          revision_on_collection_change: false
       org:
         hibernate:
-            envers:
-              store_data_at_delete: true
+          envers:
+            autoRegisterListeners: true
+            store_data_at_delete: true
+            revision_on_collection_change: false
             
             
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -73,11 +71,11 @@ logging:
     org:
       hibernate:
         SQL: DEBUG
+        envers: DEBUG
         type:
           descriptor:
             sql:
               BasicBinder: TRACE
-        envers: DEBUG
 
 
 feign:
