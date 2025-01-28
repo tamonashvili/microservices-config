@@ -29,6 +29,7 @@ spring:
           envers:
             autoRegisterListeners: true
             store_data_at_delete: true
+            revision_on_collection_change: false
             
             
         dialect: org.hibernate.dialect.PostgreSQLDialect
