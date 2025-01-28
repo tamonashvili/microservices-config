@@ -20,17 +20,23 @@ eureka:         #tells about the Eureka server details and its refresh time
 
 spring:
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       ddl-auto: update
-
-        #dialect: org.hibernate.dialect.PostgreSQLDialect
-        dialect: ge.hrsolutions.docflow.util.ProjectPostgreSQL95Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        multiTenancy: DATABASE
         #format_sql: true
         jdbc:
           lob:
             non_contextual_creation: true
+        types:
+          print:
+            banner: false
     generate-ddl: true
+
+  
   servlet:
     multipart:
       max-file-size: 5MB
