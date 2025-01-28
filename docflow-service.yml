@@ -24,9 +24,10 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      hibernate:
-        envers:
-          autoRegisterListeners: true
+      org:
+        hibernate:
+          envers:
+            store_data_at_delete: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
         multiTenancy: DATABASE
         #format_sql: true
