@@ -25,6 +25,8 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
+        envers:
+          autoRegisterListeners: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
         multiTenancy: DATABASE
         #format_sql: true
