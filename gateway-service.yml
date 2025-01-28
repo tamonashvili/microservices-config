@@ -1,9 +1,10 @@
 spring:
+  main:
+      allow-bean-definition-overriding: true
   output:
     ansi:
       enabled: always
-  main:
-      allow-bean-definition-overriding: true
+
       
   cloud:
     gateway:
