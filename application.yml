@@ -1,7 +1,7 @@
 fileServerAddr: 10.114.0.2
 gatewayUrl: https://service.onday.ge
 env: prod
-defaultTenant: dev
+defaultTenant: dreamland
 
 tenants:
   datasources:
