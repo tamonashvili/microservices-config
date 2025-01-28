@@ -29,7 +29,6 @@ spring:
           store_data_at_delete: true
           autoRegisterListeners: true
           revision_on_collection_change: false
-          revision_entity_class: ge.hrsolutions.docflow.listener.CustomRevisionEntity
             
             
         dialect: org.hibernate.dialect.PostgreSQLDialect
