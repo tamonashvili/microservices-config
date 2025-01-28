@@ -24,14 +24,13 @@ spring:
     hibernate:
       ddl-auto: update
     properties:
-      org:
-        hibernate:
-          envers:
-            store_data_at_delete: true
       hibernate:
         envers:
+          store_data_at_delete: true
+          autoRegisterListeners: true
+          revision_on_collection_change: false
           revision_entity_class: ge.hrsolutions.docflow.listener.CustomRevisionEntity
-          revision_on_collection_change: false            
+            
             
         dialect: org.hibernate.dialect.PostgreSQLDialect
         multiTenancy: DATABASE
