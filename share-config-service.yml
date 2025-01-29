@@ -53,7 +53,7 @@ spring:
        uri: mongodb://onday_logger:demo1989ErrorLogger@154.6.141.122:27090/?authSource=file_attachment_db
   redis:
     host: 127.0.0.1
-    port: 6371
+    port: 6379
     ssl: false
     timeout: 5000
     lettuce:
