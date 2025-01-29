@@ -44,7 +44,18 @@ spring:
        uri: mongodb://onday_logger:demo1989ErrorLogger@10.114.0.13:27090/?authSource=logger_db
       attachmentdb:
        uri: mongodb://onday_logger:demo1989ErrorLogger@10.114.0.13:27090/?authSource=file_attachment_db
-
+  redis:
+    host: 10.114.0.15
+    port: 6379
+    ssl: false
+    timeout: 5000
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 5000
+        
   application:
     name: share-config-service
   datasource:
