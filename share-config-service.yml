@@ -51,7 +51,18 @@ spring:
     url: jdbc:postgresql://10.114.0.11:2552/config_service_db
     username: onday_pg
     password: Onday#2024
-
+  redis:
+    host: 10.114.0.2
+    port: 6379
+    ssl: false
+    timeout: 5000
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 5000
+        
   boot:
     admin:
       client:
