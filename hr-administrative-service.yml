@@ -79,3 +79,9 @@ feign:
       default:
         connectTimeout: 160000000
         readTimeout: 160000000
+
+
+
+security-properties:
+  security:
+    encryptionSecretKey: Ta1989#$s
