@@ -76,5 +76,7 @@ logging:
               BasicBinder: off
 
 
-
+security-properties:
+  security:
+    encryptionSecretKey: S0942MmGA8Ek
 
