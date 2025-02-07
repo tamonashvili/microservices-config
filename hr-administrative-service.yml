@@ -73,5 +73,7 @@ logging:
               BasicBinder: off
 
 
-
+security-properties:
+  security:
+    encryptionSecretKey: Ta1989#$s
 
