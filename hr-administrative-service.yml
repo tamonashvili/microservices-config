@@ -112,3 +112,6 @@ management:
       exposure:
         include: "*"
         
+security-properties:
+  security:
+    encryptionSecretKey: Ta1989#$s
